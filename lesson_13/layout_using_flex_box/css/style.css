@@ -1,0 +1,126 @@
+/* html, body {height: 100%;} */
+
+/* #e9f3f3 */
+/* #01b3b3 - bg кнопки и заголовка*/
+/* #cfdede */
+
+
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.wrapper {
+	font-size: 12px;
+	position: relative;
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 6.9%;
+	left: 31.3%;
+	width: 569px;
+	height: 569px;
+	background-color: #e9f3f3;
+	padding: 90px 120px;
+}
+
+.form {
+	position: relative;
+	padding: 29px;
+	background-color: #fff;
+	width: 320px;
+	height: 370px;
+	border: 1px solid #cfdede;
+}
+
+/* .form-header, .register-account, .btn-form {
+} */
+
+.form-header {
+	width: 150px;
+	background-color: #01b3b3;
+	padding: 6px 0;
+	line-height: 12px;
+	border-radius: 1px;
+	position: absolute;
+	top: -3px;
+	left: 29px;
+}
+
+.header-form {
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+	color: #fff;
+}
+
+
+.register-account {
+	margin-top: 25px;
+}
+
+.register-account-email .register-account-password {
+	display: block;
+	text-align: left;
+	color: #333333;
+}
+
+.register-account input {
+	width: 100%;
+	border: 1px solid #cfdede;
+	padding: 8px 10px;
+	letter-spacing: 0.2px;
+	background-color: #ebf4f4;
+	margin-bottom: 17px;
+}
+
+.register-account input::placeholder {
+	font-style: italic;
+}
+
+.register-account-email {
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.register-account-password {
+	margin-bottom: 12px;
+	font-weight: 700;
+}
+
+.register-account-email span,
+.register-account-password span {
+	color: #01b3b3;
+}
+
+.btn-form {
+	width: 100%;
+	border-radius: 3px;
+	/* background-color: #01b3b3; */
+	padding: 1px 0;
+	margin-top: 16px;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 43px;
+	border: none;
+	box-sizing: border-box;
+	box-shadow: rgb(0, 204, 204) 0 1px 1px;
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#01c5c5+0,01b4b4+100 */
+	background: rgb(1,197,197); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAxYzVjNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMWI0YjQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(1,197,197,1) 0%, rgba(1,180,180,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(1,197,197,1) 0%,rgba(1,180,180,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(1,197,197,1) 0%,rgba(1,180,180,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01c5c5', endColorstr='#01b4b4',GradientType=0 ); /* IE6-8 */
+}
+
+
+
