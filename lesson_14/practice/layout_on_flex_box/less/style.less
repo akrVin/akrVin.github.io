@@ -1,0 +1,83 @@
+/* ===============VAR=============== */
+
+// ==============color==============
+@fzcol1: #292929;
+@btncol: #fff;
+// ===============size==============
+@fz1: 2rem;
+@fzbut: 1.3rem;
+// ================bg===============
+@btn: #f9b001;
+
+
+
+
+
+body, html {
+	height: 100%;
+	font-size: 10px;
+}
+
+.wraper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+._container {
+	width: 1320px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.header {
+	height: 100vh;
+	&-img {
+	}
+}
+.main-header {
+	margin-top: 2rem;
+	.main-container {
+		display: flex;
+		justify-content: space-between;
+		height: 7rem;
+	}
+	.main-logo {
+		.logo {
+		}
+	}
+	.main-consultation {
+		display: flex;
+		align-items: center;
+	}
+	.main-tel {
+		margin-right: 1.75rem;
+		a {
+			color: @fzcol1;
+			text-decoration: none;
+			font-size: @fz1;
+			font-weight: 600;
+		}
+	}
+	.main-bautton {
+		margin-left: 1.75rem;
+		.btn {
+			background-color: @btn;
+			border-radius: 8px;
+			padding: 1rem 2rem;
+			border: none;
+			color: @btncol;
+		}
+	}
+}
+
+.second-header {
+	border: 2px solid green;
+}
+.content {
+	flex: 1 1 auto;
+	border: 2px solid green;
+}
+
+.footer {
+	height: 7rem;
+	border: 2px solid yellow;
+}
