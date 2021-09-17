@@ -11,4 +11,5 @@
 [Урок 13](https://akrvin.github.io/lesson_13/layout_using_flex_box/) - Верстка Pixel Perfect  
 [Практика](https://akrvin.github.io/practice/layout_on_bootstrap/) - на bootstrap    
 [FlexBox](https://akrvin.github.io/practice/layout_on_flex_box/)  
-[Урок_14](https://akrvin.github.io/lesson_14/) - подключение шрифтов
+[Урок_14](https://akrvin.github.io/lesson_14/) - подключение шрифтов  
+[Урок_15](https://akrvin.github.io/lesson_15/) - пседо-классы и псевдо-элементы
