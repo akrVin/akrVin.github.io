@@ -1,0 +1,357 @@
+/* import */
+@import "_fonts";
+
+
+
+/* variables */
+
+// ============font-size============
+@fzh2: 3.6rem;
+@fzh3: 2rem;
+// ============color fon============
+@btnbg: #fdb303;
+@fonbg1: #286a0a;
+@fonbg2: #fcfcfc;
+@foncobl: #70c849;
+@fonform: #ffffff;
+// ===========color text===========
+@fcolor1: #1a1820;
+@fcolor2: #292929;
+@fcolor3: #358015;
+@fbtncolor: #fffaee;
+@fcolorform: #565656;
+@colorslider: #49bf15;
+@markerred: #ff0000;
+@markergreen: #358015;
+// ============border============
+@borcolor: #ddd;
+
+//  ==============mixin=============
+
+.light() {
+	font-family: 'Proxima_Nova', sana-serif;
+	font-weight: 300;
+}
+
+.regular() {
+	font-family: 'Proxima_Nova', sana-serif;
+	font-weight: 400;
+}
+
+.semibold() {
+	font-family: 'Proxima_Nova', sana-serif;
+	font-weight: 600;
+}
+
+.bold() {
+	font-family: 'Proxima_Nova', sana-serif;
+	font-weight: 700;
+}
+
+.border() {
+	border-radius: 5px;
+  border: solid 1px @borcolor;
+}
+
+.button-color() {
+	background-color: @btnbg;
+}
+
+.button() {
+	.semibold();
+  text-align: center;
+	text-transform: uppercase;
+	color: @fbtncolor;
+	border-radius: 8px;
+  .button-color();
+	border: none;
+}
+
+// =================================
+
+
+html, body {
+	font-size: 10px;
+	.regular();
+}
+
+
+.main {
+	padding: 3rem 0;
+	background: #fff url("../img/bg-main.jpg") center center no-repeat;
+	background-size: cover;
+	//============шапка============ 
+	&-header {
+		.header-main {
+			height: 7rem;
+			&-img {
+				img{
+					max-width: 100%;
+				} 
+			}
+			&-phone {
+				display: inline-block;
+				width: 100%;
+			}
+			&-tel {
+				.bold();
+				font-size: 2rem;
+				height: 7rem;
+				line-height: 7rem;
+				a {
+					color: @fcolor2;
+				}
+				a:hover {
+					text-decoration: none;
+					color: #23527c;
+				}
+			}
+			.wrap {
+				display: table;
+				width: 100%;
+				height: 7rem;
+				&-block {
+					display: table-cell;
+					vertical-align: middle;
+					text-align: right;
+				}
+			}
+			.button {
+				font-size: 1.2rem;
+				padding: 1rem 3rem;
+				.button();
+				&:hover {
+					background-color: darken(@btnbg, 5%);
+				}
+			}
+		}
+	}
+	// ========= призыв =========
+	&-content {
+		margin-top: 10.4rem;
+		.heading {
+			max-width: 100%;
+			text-transform: uppercase;
+			.bold();
+			font-size: 40px;
+			line-height: 1.45;
+			text-align: left;
+			color: @fcolor2;
+			margin: 0 0 2.65rem 0;
+		}
+		.top-text {
+			font-size: 2.4rem;
+			.regular();
+			text-align: left;
+			color: @fcolor2;
+			margin: 2.65rem 0 3rem 0;
+		}
+		.color-block {
+			width: 100%;
+			margin: 3rem 0;
+			p {
+				display: inline-block;
+				font-size: 18px;
+				.semibold();
+				text-align: left;
+				letter-spacing: 2;
+				line-height: 1.5;
+				color: #fff;
+				width: 225px;
+				height: 105px;
+				padding: 2.8rem 4rem;
+				background-color: @foncobl;
+			}
+			span {
+				letter-spacing: normal;
+			}
+		}
+		.bottom-text {
+			font-size: 22px;
+			.bold();
+			text-align: left;
+			text-transform: uppercase;
+			color: @fcolor2;
+			margin-top: 1rem;
+		}
+	}
+	// ========= форма =========
+	&-form {
+  	padding: 4.6rem 4.5rem;
+  	background-color: @fonform;
+		text-align: center;
+		&-heading {
+			font-size: 1.8rem;
+  		.regular();
+  		text-align: center;
+  		color: @fcolor2;
+			margin-bottom: 2rem;
+			strong {
+				.bold();
+			}
+		}
+		&-forma {
+			margin: 2rem 0 0.7rem 0;
+			&-name, &-tel {
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%) translateY(-50%);
+				display: block;
+				background-color: @fonform;
+				font-size: 1.3rem;
+ 				.regular();
+ 				text-align: center;
+				color: @fcolorform;
+				padding: 0.5rem;
+			}
+			&-input {
+				display: block;
+				font-size: 1.5rem;
+				width: 100%;
+				.border();
+				padding: 1.5rem;
+				margin-bottom: 2.5rem;
+			}
+			.button {
+				width: 100%;
+				padding: 1.5rem;
+				font-size: 1.6rem;
+				.button();
+				&:hover {
+					background-color: darken(@btnbg, 5%);
+				}
+			}
+		}
+		&-footnote {
+			font-size: 12px;
+			.regular();
+			text-align: center;
+			color: @fcolorform;
+			margin-top: 1.5rem;
+		}
+	}
+	&-condition {
+		p {
+			font-size: 12px;
+  		.regular();
+  		text-align: left;
+  		color: @fcolorform;
+			margin: 3.6rem 0 0 2.5rem;
+		}
+	}
+}
+// =============================
+.section {
+	padding: 10rem 0;
+}
+// =============================
+@media (max-width: 991px) {
+	.main {
+		background-position: top right;
+		.header-main-tel {
+			text-align: center;
+		}
+		.main-content {
+			.heading {
+			font-size: 2.5rem;
+			}
+		}
+		.main-form {
+			padding: 1.5rem 4rem;
+		}
+		.main-condition {
+			p {
+				color: @fbtncolor;
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.main {
+		.main-header {
+			text-align: center;
+		}
+		.wrap {
+			margin-top: -1rem;
+			.wrap-block {
+				text-align: center;
+			}
+		}
+		
+		.main-content {
+			margin-top: 20rem;
+			.heading, .top-text, .color-block, .bottom-text {
+				text-align: center;
+			}
+			.color-block {
+				p {
+					text-align: center;
+				}
+			}
+			.main-form {
+				margin-top: 4rem;
+				margin-left: 15%;
+				margin-right: 15%;
+			}
+		}
+		.main-condition {
+			p {
+				margin-left: 15%;
+			}
+		}
+	}
+}
+
+@media (max-width: 460px) {
+	.main {
+		.main-content {
+			.heading {
+			font-size: 2rem;
+			}
+			.top-text {
+				font-size: 2rem;
+			}
+			.color-block {
+				p {
+					max-width: 100%;
+				}
+			}
+			.bottom-text {
+				font-size: 2rem;
+			}
+		}
+		.main-form {
+			padding: 2rem 2rem;
+			margin-left: 10%;
+			margin-right: 10%;
+			.main-form-heading {
+				font-size: 1.5rem;
+			}
+			.main-form-forma-name,
+			.main-form-forma-tel {
+				font-size: 1rem;
+			}
+			.main-form-forma-input {
+				padding: 1rem;
+			}
+		}
+		.main-condition {
+			p {
+				font-size: 1rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 380px) {
+	.main {
+		.main-form {
+			margin-left: 5%;
+			margin-right: 5%;
+			.button {
+				font-size: 1.2rem;
+			}
+		}
+	}
+}
